@@ -1,22 +1,19 @@
 import java.util.*;
 public class Recursion {
-    
     public static void main(String args[]){
         int num;
-        Scanner input = new Scanner(System.in);
-        
+        Scanner input = new Scanner(System.in); 
         System.out.print("Enter Number: ");
         num = input.nextInt();
         sum(num);
         System.out.println(sum(num));
+        System.out.println("Test Git ");
     }
-    
     static int sum(int num){
         if(num == 1){
             return 1;
         }
         else 
-            return num + sum(num-1);
-                    
+            return num + sum(num-1);     
     }
 }
